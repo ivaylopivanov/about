@@ -1,0 +1,33 @@
+body {
+  padding-bottom: 70px;
+}
+
+.app-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.description {
+  border-left: 1px solid #dedede;
+}
+
+.markdown-body {
+  padding: 5px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.navbar {
+  min-height: 50px;
+  border-top: 1px solid #dedede;
+}
+
+footer {
+  background: #fff;
+  padding: 15px;
+  border-top: 1px solid #dedede;
+  margin-top: 20px;
+}
