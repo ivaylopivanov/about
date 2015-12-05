@@ -10,6 +10,7 @@ export default function() {
     'about.getApisWorkedWith',
     'about.getLastCommit',
     'about.getTechnologies',
+    'about.getInfluencers',
 
   ];
   this.transition(

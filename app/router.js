@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('getApisWorkedWith', {path: "/get-apis-worked-with"});
     this.route('getLastCommit', {path: "/get-last-commit"});
     this.route('getTechnologies', {path: "/get-technologies"});
+    this.route('getInfluencers', {path: "/get-influencers"});
   });
 });
 
