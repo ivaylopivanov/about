@@ -5,7 +5,7 @@ export default Ember.Route.extend(LoadingSliderMixin, {
   model() {
     let url = 'https://api.github.com/users/ivaylopivanov/events?page=1';
     this.loading();
-    return $.get(url);
+    return Ember.$.get(url);
   },
   setupController(controller, model) {
     this.finished();
@@ -23,7 +23,7 @@ export default Ember.Route.extend(LoadingSliderMixin, {
           controller.set('commitURL', commitURL);
           break;
         }
-      };
+      }
     }
   }
 });

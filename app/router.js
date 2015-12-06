@@ -15,6 +15,7 @@ Router.map(function() {
     this.route('getLastCommit', {path: "/get-last-commit"});
     this.route('getTechnologies', {path: "/get-technologies"});
     this.route('getInfluencers', {path: "/get-influencers"});
+    this.route('getHobbies', {path: "/get-hobbies"});
   });
 });
 

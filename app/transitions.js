@@ -11,6 +11,7 @@ export default function() {
     'about.getLastCommit',
     'about.getTechnologies',
     'about.getInfluencers',
+    'about.getHobbies',
 
   ];
   this.transition(
