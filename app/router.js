@@ -7,15 +7,16 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about', function() {
-    this.route('getDescription', {path: "/get-description"});
-    this.route('getProgrammingLanguages', {path: "/get-programming-languages"});
-    this.route('getNaturalLanguages', {path: "/get-natural-languages"});
-    this.route('getExperience', {path: "/get-experience"});
-    this.route('getApisWorkedWith', {path: "/get-apis-worked-with"});
-    this.route('getLastCommit', {path: "/get-last-commit"});
-    this.route('getTechnologies', {path: "/get-technologies"});
-    this.route('getInfluencers', {path: "/get-influencers"});
-    this.route('getHobbies', {path: "/get-hobbies"});
+    this.route('description', {path: "/description"});
+    this.route('programmingLanguages', {path: "/programming-languages"});
+    this.route('naturalLanguages', {path: "/natural-languages"});
+    this.route('experience', {path: "/experience"});
+    this.route('apisWorkedWith', {path: "/apis-worked-with"});
+    this.route('lastCommit', {path: "/last-commit"});
+    this.route('technologies', {path: "/technologies"});
+    this.route('influencers', {path: "/influencers"});
+    this.route('hobbies', {path: "/hobbies"});
+    this.route('education', {path: "/education"});
   });
 });
 

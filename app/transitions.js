@@ -3,15 +3,16 @@ import Ember from "ember";
 export default function() {
   let routes = [
     'about',
-    'about.getDescription',
-    'about.getProgrammingLanguages',
-    'about.getNaturalLanguages',
-    'about.getExperience',
-    'about.getApisWorkedWith',
-    'about.getLastCommit',
-    'about.getTechnologies',
-    'about.getInfluencers',
-    'about.getHobbies',
+    'about.description',
+    'about.programmingLanguages',
+    'about.naturalLanguages',
+    'about.experience',
+    'about.apisWorkedWith',
+    'about.lastCommit',
+    'about.technologies',
+    'about.influencers',
+    'about.hobbies',
+    'about.education',
 
   ];
   this.transition(

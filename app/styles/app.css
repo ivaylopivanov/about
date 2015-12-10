@@ -62,3 +62,24 @@ footer {
 #content {
   height: 2000px;
 }
+
+.sticky {
+  position: fixed;
+  top: 20px;
+}
+
+.liquid-container {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.no-padding {
+  padding: 0;
+}
