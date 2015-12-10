@@ -83,3 +83,10 @@ footer {
 .no-padding {
   padding: 0;
 }
+
+#gh-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
