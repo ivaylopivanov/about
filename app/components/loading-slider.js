@@ -12,7 +12,6 @@ export default Ember.Component.extend({
     this.set('expanding', this.getAttr('expanding'));
     this.set('speed', this.getAttr('speed'));
     this.set('color', this.getAttr('color'));
-
     this.manage();
   }),
 
@@ -30,22 +29,21 @@ export default Ember.Component.extend({
 
   animate() {
     this.set('isLoaded', false);
-    let self = this,
-        elapsedTime = 0,
-        inner = $('<span>'),
-        outer = this.$(),
-        duration = this.getWithDefault('duration', 300),
-        innerWidth = 0,
-        outerWidth = this.$().width(),
-        stepWidth = Math.round(outerWidth / 50),
-        color = this.get('color');
+    let elapsedTime = 0;
+    let inner = $('<span>');
+    let outer = this.$();
+    let duration = this.getWithDefault('duration', 300);
+    let innerWidth = 0;
+    let outerWidth = this.$().width();
+    let stepWidth = Math.round(outerWidth / 50);
+    let color = this.get('color');
 
     outer.append(inner);
     if (color) {
       inner.css('background-color', color);
     }
 
-    let interval = window.setInterval(function() {
+    let interval = window.setInterval(() => {
       elapsedTime = elapsedTime + 10;
       inner.width(innerWidth = innerWidth + stepWidth);
 
@@ -59,14 +57,14 @@ export default Ember.Component.extend({
       }
 
       if (innerWidth > outerWidth) {
-        Ember.run.later(function() {
+        Ember.run.later(() => {
           outer.empty();
           window.clearInterval(interval);
         }, 50);
       }
 
       // the activity has finished
-      if (self.get('isLoaded')) {
+      if (this.get('isLoaded')) {
         // start with a sizable pixel step
         if (stepWidth < 10) {
           stepWidth = 10;
@@ -78,10 +76,10 @@ export default Ember.Component.extend({
   },
 
   expandingAnimate() {
-    let self = this,
-        outer = this.$(),
-        speed = this.getWithDefault('speed', 1000),
-        colorQueue = this.get('color');
+    let self = this;
+    let outer = this.$();
+    let speed = this.getWithDefault('speed', 1000);
+    let colorQueue = this.get('color');
 
     if ('object' === typeof colorQueue) {
       (function updateFn() {
@@ -100,16 +98,15 @@ export default Ember.Component.extend({
   },
 
   expandItem(color, cleanUp) {
-    let self = this,
-        inner = $('<span>').css({'background-color': color}),
-        outer = this.$(),
-        innerWidth = 0,
-        outerWidth = outer.width(),
-        stepWidth = Math.round(outerWidth / 50);
+    let inner = $('<span>').css({'background-color': color});
+    let outer = this.$();
+    let innerWidth = 0;
+    let outerWidth = outer.width();
+    let stepWidth = Math.round(outerWidth / 50);
 
     outer.append(inner);
 
-    let interval = window.setInterval(function() {
+    let interval = window.setInterval(() => {
       let step = (innerWidth = innerWidth + stepWidth);
       if (innerWidth > outerWidth) {
         window.clearInterval(interval);
@@ -125,9 +122,8 @@ export default Ember.Component.extend({
   },
 
   didInsertElement() {
+    let color = this.get('color');
     this.$().html('<span>');
-
-    var color = this.get('color');
     if (color) {
       this.$('span').css('background-color', color);
     }

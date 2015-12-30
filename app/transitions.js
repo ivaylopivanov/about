@@ -13,7 +13,6 @@ export default function() {
     'about.influencers',
     'about.hobbies',
     'about.education',
-
   ];
   this.transition(
     this.toRoute(routes),
