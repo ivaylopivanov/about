@@ -128,4 +128,5 @@ export default Ember.Component.extend({
       this.$('span').css('background-color', color);
     }
   }
+
 });

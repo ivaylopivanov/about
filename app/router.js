@@ -1,8 +1,16 @@
 import Ember from 'ember';
 import config from './config/environment';
+import menu from './services/menu';
 
 const Router = Ember.Router.extend({
   location: config.locationType
+});
+
+Router.reopen({
+  menuManager: Ember.inject.service('menu'),
+  hideMenu: function() {
+    this.get('menuManager').currentRouteDidChange();
+  }.on('didTransition')
 });
 
 Router.map(function() {
@@ -18,6 +26,7 @@ Router.map(function() {
     this.route('hobbies', {path: "/hobbies"});
     this.route('education', {path: "/education"});
   });
+  this.route('fourOhFour', { path: "*path"});
 });
 
 export default Router;

@@ -1,15 +1,22 @@
-<div id="sticky-anchor"></div>
-<div id="sticky">
-  <ul class="no-bullets  no-padding navigation">
+<div class="container">
+  <ul class="no-bullets  no-padding">
+    <div class="col-md-4 navigation">
     {{#link-to 'about.description' tagName="li"}}{{#link-to 'about.description'}}Description{{/link-to}}{{/link-to}}
     {{#link-to 'about.education' tagName="li"}}{{#link-to 'about.education'}}Education{{/link-to}}{{/link-to}}
     {{#link-to 'about.experience' tagName="li"}}{{#link-to 'about.experience'}}Professional Experience{{/link-to}}{{/link-to}}
+    {{#link-to 'about.lastCommit' tagName="li"}}{{#link-to 'about.lastCommit'}}Last Commit{{/link-to}}{{/link-to}}
+    </div>
+    <div class="col-md-4 navigation">
     {{#link-to 'about.naturalLanguages' tagName="li"}}{{#link-to 'about.naturalLanguages'}}Natural Languages{{/link-to}}{{/link-to}}
     {{#link-to 'about.programmingLanguages' tagName="li"}}{{#link-to 'about.programmingLanguages'}}Programming Languages{{/link-to}}{{/link-to}}
     {{#link-to 'about.apisWorkedWith' tagName="li"}}{{#link-to 'about.apisWorkedWith'}}Experience with APIs{{/link-to}}{{/link-to}}
+    {{#link-to 'about.apisWorkedWith' tagName="li"}}{{#link-to 'about.apisWorkedWith'}}Experience with APIs{{/link-to}}{{/link-to}}
+    </div>
+    <div class="col-md-4 navigation">
     {{#link-to 'about.technologies' tagName="li"}}{{#link-to 'about.technologies'}}Experience with Technologies{{/link-to}}{{/link-to}}
     {{#link-to 'about.influencers' tagName="li"}}{{#link-to 'about.influencers'}}Influencers{{/link-to}}{{/link-to}}
     {{#link-to 'about.hobbies' tagName="li"}}{{#link-to 'about.hobbies'}}Hobbies{{/link-to}}{{/link-to}}
-    {{#link-to 'about.lastCommit' tagName="li"}}{{#link-to 'about.lastCommit'}}Last Commit{{/link-to}}{{/link-to}}
+    {{#link-to 'about.hobbies' tagName="li"}}{{#link-to 'about.hobbies'}}Hobbies{{/link-to}}{{/link-to}}
+    </div>
   </ul>
 </div>

@@ -13,6 +13,7 @@ module.exports = function(environment) {
       }
     },
     contentSecurityPolicy: {
+      'child-src': "'self'",
       'connect-src': 'https://api.github.com',
       'img-src': "'self' https://camo.githubusercontent.com"
     },

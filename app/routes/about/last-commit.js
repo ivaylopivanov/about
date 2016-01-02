@@ -2,11 +2,13 @@ import Ember from 'ember';
 import LoadingSliderMixin from '../../mixins/loading-slider';
 
 export default Ember.Route.extend(LoadingSliderMixin, {
+
   model() {
     let url = 'https://api.github.com/users/ivaylopivanov/events?page=1';
     this.loading();
     return Ember.$.get(url);
   },
+
   setupController(controller, model) {
     this.finished();
     if (model && model.length) {
@@ -26,4 +28,5 @@ export default Ember.Route.extend(LoadingSliderMixin, {
       }
     }
   }
+
 });
