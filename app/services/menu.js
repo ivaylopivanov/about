@@ -7,13 +7,13 @@ export default Ember.Service.extend({
   },
 
   displayMenuContent() {
-    $('.show-menu').fadeOut(() => {
-      $('.hide-menu').fadeIn();
-      let parent = $('.menu').height();
-      let child = $('.menu').find('.container').height();
+    Ember.$('.show-menu').fadeOut(() => {
+      Ember.$('.hide-menu').fadeIn();
+      let parent = Ember.$('.menu').height();
+      let child = Ember.$('.menu').find('.container').height();
       if (child >= parent) {
         let height = child + 50;
-        $('.menu').css('height', height + 'px');
+        Ember.$('.menu').css('height', height + 'px');
       }
     });
   },
@@ -22,8 +22,8 @@ export default Ember.Service.extend({
     Ember.$('html, body').animate({
       scrollTop: 0
     }, 700);
-    $('.show-menu').css('position', 'relative');
-    TweenLite.to($('.menu'), 0.8, {css: {'height': '460px'}, onComplete: () => {
+    Ember.$('.show-menu').css('position', 'relative');
+    TweenLite.to(Ember.$('.menu'), 0.8, {css: {'height': '460px'}, onComplete: () => {
       this.set('columnState.visible', true);
       this.displayMenuContent();
     }});
@@ -35,7 +35,7 @@ export default Ember.Service.extend({
       autoAlpha: 1
     };
     let delay = '-=0.45';
-    $('.show-menu').css('position', 'fixed');
+    Ember.$('.show-menu').css('position', 'fixed');
     new TimelineLite()
     .to('.navigation > li:nth-child(10)', 0.5, animation)
     .to('.navigation > li:nth-child(9)', 0.5, animation, delay)
@@ -47,10 +47,10 @@ export default Ember.Service.extend({
     .to('.navigation > li:nth-child(3)', 0.5, animation, delay)
     .to('.navigation > li:nth-child(2)', 0.5, animation, delay)
     .to('.navigation > li:nth-child(1)', 0.5, animation, delay)
-    .to($('.menu'), 0.8, {css: {'height': '0px'},  onComplete: () => {
+    .to(Ember.$('.menu'), 0.8, {css: {'height': '0px'},  onComplete: () => {
       this.set('columnState.visible', false);
-      $('.hide-menu').fadeOut(() => {
-        $('.show-menu').fadeIn();
+      Ember.$('.hide-menu').fadeOut(() => {
+        Ember.$('.show-menu').fadeIn();
       });
     }});
   },

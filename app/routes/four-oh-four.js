@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 
-  beforeModel(transition) {
+  redirect(model, transition) {
     transition.abort();
     this.transitionTo('about');
   }

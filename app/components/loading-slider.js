@@ -11,7 +11,7 @@ export default Ember.Component.extend({
     this.set('duration', this.getAttr('duration'));
     this.set('expanding', this.getAttr('expanding'));
     this.set('speed', this.getAttr('speed'));
-    this.set('color', this.getAttr('color'));
+    this.set('color', '#337ab7');
     this.manage();
   }),
 
