@@ -229,3 +229,37 @@ footer {
   z-index: -1;
   opacity: .8;
 }
+
+.bg-effect {
+  background: rgba(70, 66, 66, .8);
+  padding-left: 15px;
+}
+
+.box {
+  padding: 20px;
+}
+
+.box > h3 {
+  margin-top: 0px;
+}
+
+.box > p, .box > ul {
+  margin-left: 10px;
+}
+
+.box > p {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.box > p > a {
+  padding: 5px;
+  background: #B9B9B9;
+  color: #000;
+  text-decoration: none;
+}
+
+.tools > .box {
+  /*height: 100px;*/
+  min-height: 200px;
+}
