@@ -15,6 +15,9 @@ export default function() {
     'about.education',
     'about.faq',
     'about.portfolio',
+    'about.contacts',
+    'about.index',
+    'about.goals',
   ];
   this.transition(
     this.toRoute(routes),

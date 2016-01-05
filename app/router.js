@@ -15,7 +15,10 @@ Router.reopen({
 
 Router.map(function() {
   this.route('about', function() {
+    this.route('index', {path: "/"});
+    this.route('goals', {path: "/future-goals"});
     this.route('description', {path: "/description"});
+    this.route('contacts', {path: "/contacts"});
     this.route('programmingLanguages', {path: "/programming-languages"});
     this.route('naturalLanguages', {path: "/natural-languages"});
     this.route('experience', {path: "/experience"});

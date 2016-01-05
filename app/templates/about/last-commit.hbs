@@ -1,32 +1,19 @@
 <h2>Last Commit</h2>
 <hr>
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Repo</td>
-      <td>{{repoName}}</td>
-    </tr>
-    <tr>
-      <td>Repo URL</td>
-      <td><a href="{{repoURL}}" target="_blank">{{repoURL}}</a></td>
-    </tr>
-    <tr>
-      <td>Time</td>
-      <td>{{time}}</td>
-    </tr>
-    <tr>
-      <td>Message</td>
-      <td>{{commitMessage}}</td>
-    </tr>
-    <tr>
-      <td>Commit URL</td>
-      <td><a href="{{commitURL}}" target="_blank">{{commitURL}}</a></td>
-    </tr>
-  </tbody>
-</table>
+<div class="row bg-effect p50">
+  <div class="col-xs-4">
+    <p>Repo</p>
+    <p>Repo URL</p>
+    <p>Time</p>
+    <p>Message</p>
+    <p>Commit URL</p>
+  </div>
+  <div class="col-xs-8">
+    <p>{{repoName}}</p>
+    <p><a href="{{repoURL}}" target="_blank">{{repoURL}}</a></p>
+    <p>{{time}}</p>
+    <p>{{commitMessage}}</p>
+    <p><a href="{{commitURL}}" target="_blank">{{commitURL}}</a></p>
+  </div>
+</div>
+{{transiting-line}}
