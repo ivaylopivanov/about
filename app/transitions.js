@@ -7,7 +7,7 @@ export default function() {
     'about.programmingLanguages',
     'about.naturalLanguages',
     'about.experience',
-    'about.apisWorkedWith',
+    'about.services',
     'about.lastCommit',
     'about.technologies',
     'about.influencers',

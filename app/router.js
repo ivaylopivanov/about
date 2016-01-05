@@ -22,7 +22,7 @@ Router.map(function() {
     this.route('programmingLanguages', {path: "/programming-languages"});
     this.route('naturalLanguages', {path: "/natural-languages"});
     this.route('experience', {path: "/experience"});
-    this.route('apisWorkedWith', {path: "/apis-worked-with"});
+    this.route('services', {path: "/services"});
     this.route('lastCommit', {path: "/last-commit"});
     this.route('technologies', {path: "/technologies"});
     this.route('influencers', {path: "/influencers"});
