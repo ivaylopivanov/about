@@ -442,6 +442,36 @@ a:hover {
     }
 }
 
+.contact-btn {
+  -webkit-animation-name: contact-btn;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 100px 0;
+  background: rgba(70, 66, 66, .1);
+  border-radius: 0;
+}
+
+.contact-btn:hover {
+  color: #fff;
+  background: rgba(70, 66, 66, 1);
+}
+
+@-webkit-keyframes contact-btn {
+  from {
+    background: rgba(70, 66, 66, .1);
+  }
+  to {
+    background: rgba(70, 66, 66, 1);
+  }
+}
+
+.services > div > p {
+  font-size: 18px;
+}
+
 /* LETTERING COMPONENT START */
 .cs-text {
   width: 100%;
@@ -501,7 +531,7 @@ a:hover {
   text-align: center;
   font-family: 'Michroma', sans-serif;
    -webkit-font-smoothing: antialiased;
-  text-shadow: 
+  text-shadow:
     1px 1px 1px rgba(0,0,0,0.1),
     -1px -1px 1px rgba(0,0,0,0.1),
     5px 5px 0 rgb(180, 157, 96),
