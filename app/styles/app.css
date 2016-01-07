@@ -468,10 +468,22 @@ a:hover {
   }
 }
 
+#name-container > p {
+  float: right;
+  margin-right: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+}
+
 #name-container {
-  min-height: 220px;
+  min-height: 270px;
   padding: 5px;
   background: rgba(70, 66, 66, .6);
+}
+
+#name-container:hover {
+  background: rgba(70, 66, 66, .9);
 }
 
 .question {

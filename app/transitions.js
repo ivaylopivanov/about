@@ -3,9 +3,7 @@ import Ember from "ember";
 export default function() {
   let routes = [
     'about',
-    'about.description',
-    'about.programmingLanguages',
-    'about.naturalLanguages',
+    'about.languages',
     'about.experience',
     'about.services',
     'about.lastCommit',
@@ -17,7 +15,6 @@ export default function() {
     'about.portfolio',
     'about.contacts',
     'about.index',
-    'about.goals',
   ];
   this.transition(
     this.toRoute(routes),
