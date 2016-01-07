@@ -28,7 +28,7 @@ Router.map(function() {
     this.route('influencers', {path: "/influencers"});
     this.route('hobbies', {path: "/hobbies"});
     this.route('education', {path: "/education"});
-    this.route('faq', {path: "/faq"});
+    this.route('faqs', {path: "/faqs"});
     this.route('portfolio', {path: "/portfolio"});
   });
   this.route('fourOhFour', { path: "*path"});

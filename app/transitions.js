@@ -13,7 +13,7 @@ export default function() {
     'about.influencers',
     'about.hobbies',
     'about.education',
-    'about.faq',
+    'about.faqs',
     'about.portfolio',
     'about.contacts',
     'about.index',
