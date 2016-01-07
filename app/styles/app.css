@@ -468,6 +468,12 @@ a:hover {
   }
 }
 
+#name-container {
+  min-height: 220px;
+  padding: 5px;
+  background: rgba(70, 66, 66, .6);
+}
+
 .services > div > p {
   font-size: 18px;
 }
