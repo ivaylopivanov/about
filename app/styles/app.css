@@ -626,3 +626,12 @@ a:hover {
     -1px -1px 0 rgba(37,166,164,0.1);
 }
 /* LETTERING COMPONENT END */
+
+/*blockquote {
+  visibility: hidden;
+}
+*/
+
+.animated-txt {
+  float: left;
+}
