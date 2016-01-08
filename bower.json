@@ -12,6 +12,7 @@
     "loader.js": "ember-cli/loader.js#3.4.0",
     "qunit": "~1.20.0",
     "bootstrap": "~3.3.6",
-    "gsap": "greensock#~1.18.2"
+    "gsap": "greensock#~1.18.2",
+    "superslides": "~0.6.2"
   }
 }

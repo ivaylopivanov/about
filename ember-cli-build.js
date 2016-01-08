@@ -21,6 +21,8 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
   app.import('vendor/lettering.js');
   app.import('bower_components/gsap/src/minified/TweenMax.min.js');
+  app.import('bower_components/superslides/dist/jquery.superslides.min.js');
+  app.import('bower_components/superslides/dist/stylesheets/superslides.css');
   app.import('bower_components/bootstrap/dist/css/bootstrap.css');
   return app.toTree();
 };

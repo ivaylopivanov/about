@@ -495,6 +495,37 @@ a:hover {
   font-size: 18px;
 }
 
+#slides {
+  position: fixed !important;
+  height: 100% !important;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 99;
+  background: #000;
+}
+
+.slides-container img {
+  height: 600px !important;
+  width: 1200px !important;
+  top: 50% !important;
+  left: 50% !important;
+  margin-left: -600px;
+  margin-top: -300px;
+}
+
+.slides-pagination a {
+  border: 2px solid #fff;
+}
+
+.slides-pagination a.current {
+  background: #fff;
+}
+
+.slides-pagination {
+  bottom: 10px;
+}
+
 /* LETTERING COMPONENT START */
 .cs-text {
   width: 100%;
