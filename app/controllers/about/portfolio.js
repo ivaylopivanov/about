@@ -6,31 +6,31 @@ export default Ember.Controller.extend({
   eConsole: false,
   eShipItems: [
     {
-      src: 'http://192.168.1.101:4200/images/e-ship/login.png',
+      src: 'images/e-ship/login.png',
       w: 1200,
       h: 600,
       title: 'Login page'
     },
     {
-      src: 'http://192.168.1.101:4200/images/e-ship/orders-grid.png',
+      src: 'images/e-ship/orders-grid.png',
       w: 1200,
       h: 600,
       title: 'Orders grid'
     },
     {
-      src: 'http://192.168.1.101:4200/images/e-ship/filters.png',
+      src: 'images/e-ship/filters.png',
       w: 1200,
       h: 600,
       title: 'Filters'
     },
     {
-      src: 'http://192.168.1.101:4200/images/e-ship/processed-orders.png',
+      src: 'images/e-ship/processed-orders.png',
       w: 1200,
       h: 600,
       title: 'Processed orders'
     },
     {
-      src: 'http://192.168.1.101:4200/images/e-ship/manifest.png',
+      src: 'images/e-ship/manifest.png',
       w: 1200,
       h: 600,
       title: 'Get manifest'
@@ -38,37 +38,37 @@ export default Ember.Controller.extend({
   ],
   eConsoleItems: [
     {
-      src: 'http://192.168.1.101:4200/images/e-console/login.png',
+      src: 'images/e-console/login.png',
       w: 1200,
       h: 600,
       title: 'Login page'
     },
     {
-      src: 'http://192.168.1.101:4200/images/e-console/order-create.png',
+      src: 'images/e-console/order-create.png',
       w: 1200,
       h: 600,
       title: 'Create order'
     },
     {
-      src: 'http://192.168.1.101:4200/images/e-console/orders-grid.png',
+      src: 'images/e-console/orders-grid.png',
       w: 1200,
       h: 600,
       title: 'Orders grid'
     },
     {
-      src: 'http://192.168.1.101:4200/images/e-console/order-view.png',
+      src: 'images/e-console/order-view.png',
       w: 1200,
       h: 600,
       title: 'Order view'
     },
     {
-      src: 'http://192.168.1.101:4200/images/e-console/stock.png',
+      src: 'images/e-console/stock.png',
       w: 1200,
       h: 600,
       title: 'Items'
     },
     {
-      src: 'http://192.168.1.101:4200/images/e-console/stock-info.png',
+      src: 'images/e-console/stock-info.png',
       w: 1200,
       h: 600,
       title: 'Stock level'
