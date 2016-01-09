@@ -52,7 +52,7 @@ footer {
   position: fixed;
   bottom: 55px;
   right: 40px;
-  z-index: 9999;
+  z-index: 1000;
   width: 32px;
   height: 32px;
   text-align: center;
@@ -376,10 +376,10 @@ a:hover {
 }
 
 .transiting-line {
-  -webkit-animation: animate-transiting-line 2s infinite;
-  -moz-animation: animate-transiting-line 2s infinite;
-  -o-animation: animate-transiting-line 2s infinite;
-  animation: animate-transiting-line 2s infinite;
+  -webkit-animation: animate-transiting-line 3s infinite;
+  -moz-animation: animate-transiting-line 3s infinite;
+  -o-animation: animate-transiting-line 3s infinite;
+  animation: animate-transiting-line 3s infinite;
   border-top: 3px solid rgb(180, 157, 96);
   display: block;
   position: relative;
@@ -387,6 +387,20 @@ a:hover {
   height: 3px;
   margin-top: -20px;
   margin-bottom: 20px;
+}
+
+@keyframes animate-transiting-line {
+    0% {
+      width: 0%;
+    }
+    30% {
+      left: 0%;
+      width: 90%;
+    }
+    100% {
+      left: 100%;
+      width: 10%;
+    }
 }
 
 @-webkit-keyframes animate-transiting-line {
@@ -412,7 +426,7 @@ a:hover {
     }
     100% {
       left: 90%;
-      width: 10%;
+      width: 100%;
     }
 }
 @-o-keyframes animate-transiting-line {
@@ -428,19 +442,7 @@ a:hover {
       width: 10%;
     }
 }
-@keyframes animate-transiting-line {
-    0% {
-      width: 0%;
-    }
-    30% {
-      left: 0%;
-      width: 90%;
-    }
-    100% {
-      left: 90%;
-      width: 10%;
-    }
-}
+
 
 .contact-btn {
   -webkit-animation-name: contact-btn;
@@ -665,4 +667,25 @@ a:hover {
 
 .animated-txt {
   float: left;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.images-btn {
+  width: 100%;
+  height: 60px;
+  font-size:18px;
+  border-radius: 0;
+  background: rgba(43, 39, 44, 0.9);
+}
+
+.images-btn:hover {
+  color: #fff;
+  border: 1px solid rgb(180, 157, 96);
+}
+
+.bg-effect:hover .images-btn {
+  border: 1px solid rgb(180, 157, 96);
 }
