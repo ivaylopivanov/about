@@ -7,11 +7,11 @@ export default Ember.Component.extend({
 
   init: function() {
     this._super();
-    this.set('id', Math.floor((Math.random() * 100) + 1) + 'lettering')
+    this.set('id', Math.floor((Math.random() * 100) + 1) + 'lettering');
   },
 
   didInsertElement() {
-    $('#' + this.get('id')).lettering().children('span').wrap('<span />')
+    Ember.$('#' + this.get('id')).lettering().children('span').wrap('<span />')
     .parent().prepend('<span></span><span></span><span></span>');
   }
 

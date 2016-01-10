@@ -1,5 +1,3 @@
-import Ember from "ember";
-
 export default function() {
   let routes = [
     'about',
@@ -14,10 +12,10 @@ export default function() {
     'about.faqs',
     'about.portfolio',
     'about.contacts',
-    'about.index',
+    'about.index'
   ];
   this.transition(
     this.toRoute(routes),
     this.use('fade')
   );
-};
+}

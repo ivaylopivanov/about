@@ -79,7 +79,7 @@ export default Ember.Controller.extend({
     show(project) {
       let items = this.get(project + 'Items');
       this.items.clear();
-      items.forEach((item, index) => {
+      items.forEach((item) => {
         this.items.pushObject(item);
       });
       this.get('myGallery').init();

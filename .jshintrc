@@ -1,5 +1,9 @@
 {
   "predef": [
+    "Back",
+    "TimelineLite",
+    "TimelineMax",
+    "TweenLite",
     "document",
     "window",
     "-Promise"

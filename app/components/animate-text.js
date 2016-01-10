@@ -6,21 +6,21 @@ export default Ember.Component.extend({
   text: '',
 
   didInsertElement() {
-    let tl = new TimelineLite;
+    let tl = new TimelineLite();
     let chars = this.splitText(this.text);
     tl.staggerFrom(chars, 0.8, {opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:Back.easeOut}, 0.01, this.get('delay'));
   },
 
-  splitText(phrase, container) {
+  splitText(phrase) {
     let sentence = phrase.split('');
-    $.each(sentence, (index, val) => {
+    Ember.$.each(sentence, (index, val) => {
       if (val === ' ') {
         val = '&nbsp;';
       }
-      $('<div/>', { id : 'animated-txt' + index }).addClass('animated-txt')
+      Ember.$('<div/>', { id : 'animated-txt' + index }).addClass('animated-txt')
       .html(val).appendTo('.animate-text-container');
     });
-    return $('.animated-txt');
+    return Ember.$('.animated-txt');
   }
 
 });

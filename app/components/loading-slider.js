@@ -30,7 +30,7 @@ export default Ember.Component.extend({
   animate() {
     this.set('isLoaded', false);
     let elapsedTime = 0;
-    let inner = $('<span>');
+    let inner = Ember.$('<span>');
     let outer = this.$();
     let duration = this.getWithDefault('duration', 300);
     let innerWidth = 0;
@@ -98,7 +98,7 @@ export default Ember.Component.extend({
   },
 
   expandItem(color, cleanUp) {
-    let inner = $('<span>').css({'background-color': color});
+    let inner = Ember.$('<span>').css({'background-color': color});
     let outer = this.$();
     let innerWidth = 0;
     let outerWidth = outer.width();

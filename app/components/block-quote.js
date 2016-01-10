@@ -10,7 +10,7 @@ export default Ember.Component.extend(makeId, {
 
   didInsertElement() {
     let tl = new TimelineMax();
-    let text = $('#' + this.get('id'));
+    let text = Ember.$('#' + this.get('id'));
     tl.fromTo(text, 0, {}, {scale: 0.0}, 0);
     tl.fromTo(text, 1, {}, {scale: 1}, this.get('delay'));
   }

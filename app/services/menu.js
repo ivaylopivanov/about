@@ -56,7 +56,7 @@ export default Ember.Service.extend({
   },
 
   currentRouteDidChange() {
-    if ($('.menu').height() > 0) {
+    if (Ember.$('.menu').height() > 0) {
       this.hide();
     }
   },
