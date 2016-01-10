@@ -3,6 +3,8 @@ import LoadingSliderMixin from '../../mixins/loading-slider';
 
 export default Ember.Route.extend(LoadingSliderMixin, {
 
+  titleToken: 'Last Commit',
+
   model() {
     let url = 'https://api.github.com/users/ivaylopivanov/events?page=1';
     this.loading();
