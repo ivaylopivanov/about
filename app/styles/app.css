@@ -9,12 +9,6 @@ body {
   font-family: 'Roboto';
 }
 
-canvas {
-  height: 30px;
-  margin: 7px 0 0 -15px;
-  position: absolute;
-}
-
 body, h1, h2, h3, h4, h5, p, span, div, ul, li {
   color: rgb(180, 157, 96);
 }
@@ -659,11 +653,6 @@ a:hover {
     -1px -1px 0 rgba(37,166,164,0.1);
 }
 /* LETTERING COMPONENT END */
-
-/*blockquote {
-  visibility: hidden;
-}
-*/
 
 .animated-txt {
   float: left;
