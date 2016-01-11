@@ -13,6 +13,7 @@
     "qunit": "~1.20.0",
     "bootstrap": "~3.3.6",
     "gsap": "greensock#~1.18.2",
-    "photoswipe": "4.1.0"
+    "photoswipe": "4.1.0",
+    "font-awesome": "~4.5.0"
   }
 }
