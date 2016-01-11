@@ -352,7 +352,6 @@ footer {
   position: absolute;
   line-height: 30px;
   z-index: 1;
-  text-align: center;
 }
 
 .combined-box > .row > .col-md-12:nth-child(1) {
@@ -659,6 +658,10 @@ a:hover {
 
 .pointer {
   cursor: pointer;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .images-btn {
