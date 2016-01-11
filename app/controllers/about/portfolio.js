@@ -9,230 +9,230 @@ export default Ember.Controller.extend({
       src: 'images/travel/home-flights.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Home page - Search for flights'
     },
     {
       src: 'images/travel/home-hotels.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Home page - Search for hotels'
     },
     {
       src: 'images/travel/home-cars.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Home page - Search for cars'
     },
     {
       src: 'images/travel/home-events.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Home page - Search for events'
     },
     {
       src: 'images/travel/home-restaurants.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Home page - Search for restaurants'
     },
     {
       src: 'images/travel/home-clubs.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Home page - Search for clubs'
     },
     {
       src: 'images/travel/home-page-bottom.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Home page - Bottom content'
     },
     {
       src: 'images/travel/login-form.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Login form'
     },
     {
       src: 'images/travel/registration-form.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Registration form'
     },
     {
       src: 'images/travel/restaurant-view.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'View restaurant'
     },
     {
       src: 'images/travel/restaurants-menu.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'View menu'
     },
     {
       src: 'images/travel/reviews-tab.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Reviews view'
     },
     {
       src: 'images/travel/write-review.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Write review'
     },
     {
       src: 'images/travel/entity-map.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Find it on the map'
     },
     {
       src: 'images/travel/results-clubs.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Results for clubs'
     },
     {
       src: 'images/travel/results-flights.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Results for flights'
     },
     {
       src: 'images/travel/results-hotels.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Results for hotels'
     },
     {
       src: 'images/travel/entity-page-bottom.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Service landing page'
     },
     {
       src: 'images/travel/checkout-flights.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Checkout - Flights'
     },
     {
       src: 'images/travel/checkout-success.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Checkout - Success'
     },
     {
       src: 'images/travel/profile-bookings.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Profile - Bookings info'
     },
     {
       src: 'images/travel/profile-favorites.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Profile - Favorites info'
     },
     {
       src: 'images/travel/admin-hotels.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Hotels view'
     },
     {
       src: 'images/travel/edit-entity.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Edit record'
     },
     {
       src: 'images/travel/add-record.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Add record'
     },
     {
       src: 'images/travel/add-images-uploaded.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Uploaded images'
     },
     {
       src: 'images/travel/add-images.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Upload image'
     },
     {
       src: 'images/travel/gallery-upload.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Gallery for images'
+    },
+    {
+      src: 'images/travel/language-manager.png',
+      w: 1200,
+      h: 600,
+      title: 'Admin - Languages view'
     },
     {
       src: 'images/travel/edit-language.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Edit language'
     },
     {
       src: 'images/travel/edit-user.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Edit User'
     },
     {
       src: 'images/travel/emails.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Extract emails'
     },
 
-    {
-      src: 'images/travel/language-manager.png',
-      w: 1200,
-      h: 600,
-      title: ''
-    },
     {
       src: 'images/travel/maintenance.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Maintenance mode'
     },
     {
       src: 'images/travel/pick-location.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Get latitude and longitude'
     },
     {
       src: 'images/travel/bookings-clubs.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Bookings for clubs'
     },
     {
       src: 'images/travel/booking-club.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Club booking'
     },
     {
       src: 'images/travel/bookings-flights.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Bookings flights'
     },
     {
       src: 'images/travel/booking-flight.png',
       w: 1200,
       h: 600,
-      title: ''
+      title: 'Admin - Flight booking'
     },
   ],
   eShipItems: [
