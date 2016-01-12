@@ -5,6 +5,7 @@ export default Ember.Component.extend({
 
   didInsertElement() {
     new TimelineMax({repeat: -1})
+    .from(Ember.$('.icon-bar'), 0, {background: "#fff"})
     .to(Ember.$('.icon-bar:nth-child(1)'), 0.5, {background: "rgb(159, 130, 52)"})
     .to(Ember.$('.icon-bar:nth-child(2)'), 0.5, {background: "rgb(159, 130, 52)"})
     .to(Ember.$('.icon-bar:nth-child(3)'), 0.5, {background: "rgb(159, 130, 52)"});
