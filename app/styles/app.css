@@ -43,7 +43,7 @@ footer {
 
 #back-to-top {
   position: fixed;
-  bottom: 55px;
+  bottom: 58px;
   right: 40px;
   z-index: 1000;
   width: 32px;
@@ -684,3 +684,52 @@ a:hover {
 .bg-effect:hover .images-btn {
   border: 1px solid rgb(180, 157, 96);
 }
+
+/* COOKIES START */
+#cookie-bar {
+  z-index: 101;
+  background: rgba(86,86,86,0.95);
+  height: auto;
+  font-weight: 700;
+  line-height: 24px;
+  color: #eeeeee;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+#cookie-bar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#cookie-bar.fixed.bottom {
+  bottom: 0;
+  top: auto;
+}
+#cookie-bar p {
+  margin: 0;
+  padding: 0;
+}
+#cookie-bar button {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background: #7DAF3B;
+  padding: 0.5em 0.75em;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.25);
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+  -o-transition: background 0.5s ease-in;
+  -webkit-transition: background 0.25s ease-in;
+  -moz-transition: background 0.25s ease-in;
+  margin-left: 8px;
+  border: none;
+}
+#cookie-bar .cb-enable {
+  background: #007700;
+}
+#cookie-bar .cb-enable:hover {
+  background: #009900;
+}
+/* COOKIES END */

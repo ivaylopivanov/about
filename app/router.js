@@ -6,10 +6,18 @@ const Router = Ember.Router.extend({
 });
 
 Router.reopen({
+
+  analytics: Ember.inject.service('analytics'),
   menuManager: Ember.inject.service('menu'),
+
   hideMenu: function() {
     this.get('menuManager').currentRouteDidChange();
+  }.on('didTransition'),
+
+  updateGA: function() {
+    this.get('analytics').currentRouteDidChange(this.get('url'));
   }.on('didTransition')
+
 });
 
 Router.map(function() {
