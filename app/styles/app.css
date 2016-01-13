@@ -9,11 +9,11 @@ body {
 }
 
 body, h1, h2, h3, h4, h5, p, span, div, ul, li {
-  color: rgb(180, 157, 96);
+  color: #FFF7E2;
 }
 
 a {
-  color: rgb(180, 157, 96);
+  color: #FFF7E2;
   text-decoration: underline;
 }
 
@@ -234,7 +234,7 @@ footer {
 
 .bg-effect {
   box-shadow: 0 0 30px #ccc;
-  background: rgba(70, 66, 66, .8);
+  background: rgba(43, 42, 42, .9);
   padding-left: 15px;
 }
 
@@ -281,7 +281,7 @@ footer {
   height: 130px;
   width: 178px;
   padding: 15px;
-  background: rgba(70, 66, 66, .8);
+  background: rgba(43, 42, 42, .9);
   margin: 50px auto;
 }
 
@@ -294,7 +294,7 @@ footer {
   height: 0;
   border-left: 89.3px solid transparent;
   border-right: 89.3px solid transparent;
-  border-top: 49px solid rgba(70, 66, 66, .8);
+  border-top: 49px solid rgba(43, 42, 42, .9);
   z-index: -1;
 }
 
@@ -307,7 +307,7 @@ footer {
   height: 0;
   border-left: 89.3px solid transparent;
   border-right: 89.3px solid transparent;
-  border-bottom: 49px solid rgba(70, 66, 66, .8);
+  border-bottom: 49px solid rgba(43, 42, 42, .9);
   z-index: -1;
 }
 
@@ -323,15 +323,15 @@ footer {
 }
 
 .hexagon:hover,  .bg-effect:hover, .combined-box:hover {
-  background: rgba(43, 39, 44, 0.9);
+  background: rgba(43, 42, 42, 1);
 }
 
 .hexagon:hover:before {
-  border-bottom: 50px solid rgba(43, 39, 44, 0.9);
+  border-bottom: 50px solid rgba(43, 42, 42, 1);
 }
 
 .hexagon:hover:after {
-  border-top: 50px solid rgba(43, 39, 44, 0.9);
+  border-top: 50px solid rgba(43, 42, 42, 1);
 }
 
 .combined-box:hover .row {
