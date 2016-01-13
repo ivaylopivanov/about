@@ -126,6 +126,12 @@ export default Ember.Controller.extend({
       title: 'Checkout - Success'
     },
     {
+      src: 'images/travel/profile.png',
+      w: 1200,
+      h: 600,
+      title: 'Profile'
+    },
+    {
       src: 'images/travel/profile-bookings.png',
       w: 1200,
       h: 600,
