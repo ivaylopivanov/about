@@ -484,8 +484,7 @@ a:hover {
 }
 
 #name-container {
-  min-height: 210px;
-  padding: 5px;
+  padding: 10px 0px;
   background: rgba(70, 66, 66, .6);
 }
 
@@ -534,7 +533,12 @@ a:hover {
 }
 
 /* LETTERING COMPONENT START */
+
+.lettering {
+  text-align: center;
+}
 .cs-text {
+  display: block;
   width: 100%;
   margin: 30px auto 30px;
 }
@@ -563,9 +567,9 @@ a:hover {
 }
 
 .cs-text > span {
-  float: left;
-  width: 65px;
-  height: 65px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
   margin: 10px;
 }
 
@@ -585,8 +589,8 @@ a:hover {
 }
 
 .cs-text > span > span:last-child{
-  font-size: 40px;
-  line-height: 70px;
+  font-size: 30px;
+  line-height: 40px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
