@@ -8,8 +8,17 @@ body {
   color: rgba(197, 203, 206, 0.5);
 }
 
-body, h1, h2, h3, h4, h5, p, span, div, ul, li {
+body, p, span, div, ul, li {
   color: #FFF7E2;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: rgb(180, 157, 96);
+  text-shadow: 0 0 17px #ccc;
 }
 
 a {
@@ -731,5 +740,10 @@ a:hover {
 }
 #cookie-bar .cb-enable:hover {
   background: #009900;
+}
+
+.bg-effect > h2 {
+  margin-top: 0px;
+  text-align: center;
 }
 /* COOKIES END */
