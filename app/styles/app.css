@@ -657,12 +657,13 @@ a:hover {
   transform: rotate(30deg);
 }
 
-.cs-text > span:hover span {
+#name-container:hover .cs-text > span span {
   -webkit-transform: rotate(0deg) skewY(0deg) !important;
   -moz-transform: rotate(0deg) skewY(0deg) !important;
   -o-transform: rotate(0deg) skewY(0deg) !important;
   -ms-transform: rotate(0deg) skewY(0deg) !important;
   transform: rotate(0deg) skewY(0deg) !important;
+  color: rgb(70, 66, 66);
   text-shadow:
     1px 1px 0 rgba(216,65,40,0.1),
     -1px -1px 0 rgba(37,166,164,0.1);

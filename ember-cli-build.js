@@ -22,5 +22,6 @@ module.exports = function(defaults) {
   app.import('vendor/lettering.js');
   app.import('bower_components/gsap/src/minified/TweenMax.min.js');
   app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+  app.import('bower_components/bootstrap/dist/js/bootstrap.js');
   return app.toTree();
 };
