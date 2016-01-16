@@ -1,18 +1,23 @@
 @import '../variables/colors';
 @import '../variables/borders';
+@import '../variables/media-queries';
 @import '../extends/absolute-top';
+@import '../mixins/transforms';
 
 .next {
+  @media (max-width: $mobile) {
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
   > .cube {
     cursor: pointer;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 100px;
     height: 100px;
     border: $border;
-    transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    transform: rotate(45deg);
+    @include rotate(45deg);
     > div {
       margin: 25px auto;
       width: 50px;

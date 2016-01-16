@@ -1,5 +1,13 @@
 // .cs-text > span span
 
 @mixin rotate-skewY($rD, $sD) {
+  -ms-transform: rotate($rD) skewY($sD);
+  -webkit-transform: rotate($rD) skewY($sD);
   transform: rotate($rD) skewY($sD);
+}
+
+@mixin rotate($rD) {
+  -ms-transform: rotate($rD);
+  -webkit-transform: rotate($rD);
+  transform: rotate($rD);
 }

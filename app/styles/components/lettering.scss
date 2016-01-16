@@ -1,4 +1,5 @@
 @import '../variables/colors';
+@import '../variables/media-queries';
 @import '../extends/text-center';
 @import '../extends/absolute-top';
 @import '../mixins/transforms';
@@ -10,8 +11,8 @@
 .cs-text > span {
   position: relative;
   display: inline-block;
-  width: 70px;
-  height: 70px;
+  width: 57px;
+  height: 57px;
   margin: 10px;
   > span {
     @extend %absolute-top;
@@ -22,7 +23,7 @@
     transition: all 0.3s ease-in-out;
     &:last-child {
       font-size: 30px;
-      line-height: 70px;
+      line-height: 57px;
       font-weight: 400;
       text-transform: uppercase;
       text-align: center;
@@ -31,32 +32,45 @@
   }
 }
 
-#name-container:hover .cs-text > span > span {
-  &:last-child {
-    text-shadow: 1px 1px 1px $black-20, -1px -1px 1px $black-20, 5px 5px 0 $gold, -5px -5px 0 $light-grey-80;
+@media (max-width: $mobile) {
+  .cs-text > span {
+    width: 25px;
+    height: 25px;
+    > span:last-child {
+      font-size: 18px;
+      line-height: 25px;
+    }
   }
 }
 
-#name-container:hover .cs-text > span:nth-child(odd) span {
-  &:first-child {
-    @include rotate-skewY(5deg, -14deg);
+@media (min-width: $mobile) {
+  #name-container:hover .cs-text > span > span {
+    &:last-child {
+      text-shadow: 1px 1px 1px $black-20, -1px -1px 1px $black-20, 5px 5px 0 $gold, -5px -5px 0 $light-grey-80;
+    }
   }
-  &:nth-child(2) {
-    @include rotate-skewY(45deg, -10deg);
-  }
-  &:nth-child(3) {
-    transform: rotate(45deg);
-  }
-}
 
-#name-container:hover .cs-text > span:nth-child(even) span {
-  &:first-child {
-    @include rotate-skewY(-35deg, -5deg);
+  #name-container:hover .cs-text > span:nth-child(odd) span {
+    &:first-child {
+      @include rotate-skewY(5deg, -14deg);
+    }
+    &:nth-child(2) {
+      @include rotate-skewY(45deg, -10deg);
+    }
+    &:nth-child(3) {
+      transform: rotate(45deg);
+    }
   }
-  &:nth-child(2) {
-    @include rotate-skewY(27deg, -12deg);
-  }
-  &:nth-child(3) {
-    transform: rotate(30deg);
+
+  #name-container:hover .cs-text > span:nth-child(even) span {
+    &:first-child {
+      @include rotate-skewY(-35deg, -5deg);
+    }
+    &:nth-child(2) {
+      @include rotate-skewY(27deg, -12deg);
+    }
+    &:nth-child(3) {
+      transform: rotate(30deg);
+    }
   }
 }
