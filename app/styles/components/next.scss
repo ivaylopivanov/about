@@ -1,0 +1,63 @@
+@import '../variables/colors';
+@import '../variables/borders';
+@import '../extends/absolute-top';
+
+.next {
+  > .cube {
+    cursor: pointer;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border: $border;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transform: rotate(45deg);
+    > div {
+      margin: 25px auto;
+      width: 50px;
+      height: 50px;
+      border-top: $border;
+      border-right: $border;
+    }
+  }
+}
+
+.cube:hover div {
+  border-top: 1px solid $black;
+  border-right: 1px solid $black;
+}
+
+@-webkit-keyframes cube {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+@keyframes cube {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+
+.cube:before {
+  @extend %absolute-top;
+  content: '';
+  border: $white solid 2px;
+  right: 0;
+  bottom: 0;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+.cube:hover:before, .cube:focus:before, .cube:active:before {
+  animation-name: cube;
+}

@@ -1,0 +1,27 @@
+@import '../variables/colors';
+@import '../extends/text-center';
+
+#back-to-top {
+  @extend %text-center;
+  position: fixed;
+  bottom: 58px;
+  right: 40px;
+  z-index: 1000;
+  width: 32px;
+  height: 32px;
+  line-height: 30px;
+  background: $light-grey;
+  color: $light-dark-grey;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  &:hover {
+    background: $light-grey-hover;
+  }
+  &.show {
+    opacity: 1;
+  }
+}

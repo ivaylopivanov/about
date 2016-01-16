@@ -1,0 +1,11 @@
+@import '../variables/colors';
+
+//.show-menu, .hide-menu
+%meno-arrows {
+  color: $white;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,39 @@
+@import '../variables/colors';
+@import '../extends/text-center';
+
+#cookie-bar {
+  @extend %text-center;
+  z-index: 101;
+  background: $light-dark-grey;
+  font-weight: 700;
+  line-height: 24px;
+  color: $white;
+  padding: 10px 0;
+  &.fixed {
+    position: fixed;
+    width: 100%;
+    &.bottom {
+      bottom: 0;
+      top: auto;
+    }
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  button {
+    color: $white;
+    padding: 5px 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px $black-20;
+    margin-left: 8px;
+    border: none;
+  }
+  .cb-enable {
+    background: $darker-blue;
+    &:hover {
+      background: $dedede;
+      color: $black;
+    }
+  }
+}

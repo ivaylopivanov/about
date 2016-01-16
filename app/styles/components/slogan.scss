@@ -1,0 +1,15 @@
+@import '../variables/colors';
+@import '../extends/text-center';
+
+.slogan {
+  background: #252b2f;
+  color: $white;
+  padding: 90px;
+  > div {
+    @extend %text-center;
+    > p {
+      font-size: 25px;
+      font-style: italic;
+    }
+  }
+}
