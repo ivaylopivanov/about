@@ -1,0 +1,35 @@
+@import '../variables/colors';
+
+.university {
+  color: $white;
+  padding: 100px;
+  margin-top: -1px;
+  text-align: justify;
+  > .header {
+    margin: -50px;
+    font-size: 22px;
+    font-weight: 140px;
+  }
+  i {
+    margin: 20px;
+    font-size: 20px;
+    font-family: "Times New Roman", Georgia, Serif;
+  }
+  span {
+    opacity: 0.2;
+    color: $custom-grey;
+    cursor: pointer;
+    font-size: 40px;
+  }
+  span:hover {
+    color: $white;
+  }
+}
+
+@media (min-width: $mobile) {
+  .university:hover span {
+    transition-property: opacity;
+    transition-duration: 1.3s;
+    opacity: 1;
+  }
+}

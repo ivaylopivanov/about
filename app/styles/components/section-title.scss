@@ -1,0 +1,42 @@
+// @import '../variables/colors';
+
+.after-underline:after, .after-underline:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  border: inherit;
+  border-width: 2px 0 0;
+  height: 0;
+  opacity: 0.2;
+  background: $black;
+  border: 1px solid $black;
+}
+
+.after-underline:after {
+  margin-top: -18px;
+  left: 65%;
+}
+
+.after-underline:before {
+  margin-top: 20px;
+  right: 65%;
+}
+
+@media (max-width: $mobile) {
+
+  .after-underline:after, .after-underline:before {
+    width: 60px;
+  }
+
+  .after-underline:before {
+    margin-top: 20px;
+    right: 75%;
+  }
+
+  .after-underline:after {
+    margin-top: -18px;
+    left: 75%;
+  }
+
+}

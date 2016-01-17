@@ -1,8 +1,8 @@
-@import '../variables/colors';
-@import '../variables/media-queries';
-@import '../extends/text-center';
-@import '../extends/absolute-top';
-@import '../mixins/transforms';
+// @import '../variables/colors';
+// @import '../variables/media-queries';
+// @import '../extends/text-center';
+// @import '../extends/absolute-top';
+// @import '../mixins/transforms';
 
 .cs-text {
   @extend %text-center;
@@ -15,6 +15,7 @@
   height: 57px;
   margin: 10px;
   > span {
+    color: $light-dark-grey;
     @extend %absolute-top;
     width: 100%;
     height: 100%;

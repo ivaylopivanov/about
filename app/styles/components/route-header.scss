@@ -1,0 +1,41 @@
+// @import '../variables/colors';
+// @import '../extends/text-center';
+
+.route-header {
+  @extend %text-center;
+  border-bottom: 5px solid $dark-blue;
+  > .col-md-4 {
+    padding: 70px;
+    > h1 {
+      font-weight: 600;
+      letter-spacing: 5px;
+    }
+    > h1:after {
+      position: relative;
+      display: block;
+      content: "";
+      width: 0%;
+      height: 2px;
+      background: $dark-blue;
+    }
+    > i {
+      width: 100%;
+      font-size: 78px;
+    }
+  }
+  > .col-md-8 > img {
+    width: 100%;
+    @media (min-width: $mobile) {
+      height: 300px;
+    }
+  }
+  &:hover {
+    color: $dark-blue;
+    border-bottom: 10px solid $dark-blue;
+    transition: border 0.15s ease-in;
+  }
+  &:hover .col-md-4 > h1:after {
+    width: 100%;
+    transition: width 0.15s ease-in;
+  }
+}

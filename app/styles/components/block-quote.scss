@@ -1,10 +1,9 @@
-@import '../variables/colors';
+// @import '../variables/colors';
 
 .block-quote {
   position: relative;
   padding: 55px;
   color: $white;
-  background: $custom-grey;
   > div {
     > .col-md-6 {
       min-height: 200px;

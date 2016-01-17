@@ -1,15 +1,15 @@
-@import '../variables/colors';
-@import '../variables/borders';
-@import '../variables/media-queries';
-@import '../extends/absolute-top';
-@import '../mixins/transforms';
+// @import '../variables/colors';
+// @import '../variables/borders';
+// @import '../variables/media-queries';
+// @import '../extends/absolute-top';
+// @import '../mixins/transforms';
 
 .next {
+  margin-bottom: 70px;
   @media (max-width: $mobile) {
     margin-top: 50px;
-    margin-bottom: 70px;
   }
-  > .cube {
+  .cube {
     cursor: pointer;
     margin: 20px auto;
     width: 100px;
@@ -25,6 +25,9 @@
       border-top: $border;
       border-right: $border;
     }
+  }
+  > a {
+    cursor: default;
   }
 }
 

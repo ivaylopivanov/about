@@ -1,3 +1,18 @@
+a, p, body, div, span, h1, h2, h3, h4, h5 {
+  color: #fff;
+}
+
+@import 'variables/colors';
+@import 'variables/borders';
+@import 'variables/media-queries';
+
+@import 'extends/absolute-top';
+@import 'extends/menu-arrows';
+@import 'extends/no-bullets';
+@import 'extends/text-center';
+
+@import 'mixins/transforms';
+
 @import 'components/main-container';
 @import 'components/name-container';
 @import 'components/lettering';
@@ -8,3 +23,45 @@
 @import 'components/slogan';
 @import 'components/block-quote';
 @import 'components/back-to-top';
+@import 'components/route-header';
+@import 'components/section-title';
+@import 'components/scale';
+
+@import 'routes/education';
+
+a {
+  font-style: italic;
+  border-bottom: 1px solid $light-dark-grey;
+}
+
+a:hover {
+  color: $white;
+  text-decoration: none;
+  border-bottom: $border;
+}
+
+.fa {
+  color: $gold;
+  width: 100%;
+  font-size: 78px;
+}
+
+.color-black {
+  color: $black;
+}
+
+.mt150 {
+  margin-top: 150px;
+}
+
+.p50 {
+  padding: 50px;
+}
+
+.bg-shark {
+  background: $shark;
+}
+
+.bg-grey {
+  background: $custom-grey;
+}
