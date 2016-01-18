@@ -9,6 +9,12 @@
   @media (max-width: $mobile) {
     margin-top: 50px;
   }
+  > p {
+    float: right;
+    margin: -30px 65px 0 0;
+    padding: 5px;
+    border-bottom: $border;
+  }
   .cube {
     cursor: pointer;
     margin: 20px auto;

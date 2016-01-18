@@ -1,0 +1,45 @@
+body {
+  background: url('../images/bg.jpg') repeat;
+}
+
+a, p, body, div, span, h1, h2, h3, h4, h5 {
+  color: #fff;
+}
+
+a {
+  font-style: italic;
+  border-bottom: 1px solid $light-dark-grey;
+}
+
+a:hover {
+  color: $white;
+  text-decoration: none;
+  border-bottom: $border;
+}
+
+
+.fa {
+  color: $gold;
+  width: 100%;
+  font-size: 78px;
+}
+
+.color-black {
+  color: $black;
+}
+
+.mt150 {
+  margin-top: 150px;
+}
+
+.p50 {
+  padding: 50px;
+}
+
+.bg-shark {
+  background: $shark;
+}
+
+.bg-grey {
+  background: $custom-grey;
+}
