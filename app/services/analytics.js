@@ -4,6 +4,10 @@ export default Ember.Service.extend({
 
   gaEnabled: false,
 
+  init() {
+    Ember.$.post('http://localhost:3333/connections', {'version': 1});
+  },
+
   enableGA() {
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -15,12 +19,17 @@ export default Ember.Service.extend({
   },
 
   currentRouteDidChange(url) {
+    this._updateRoute(url);
     if (typeof __ga === 'function' && this.get('gaEnabled')) {
       __ga('send', 'pageview', {
         'page': url,
         'title': document.title
       });
     }
+  },
+
+  _updateRoute(url) {
+    Ember.$.post('http://localhost:3333/routes', {url: url, version: 1});
   }
 
 });

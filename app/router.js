@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 
 Router.reopen({
 
+  rootURL: '/v1/',
+
   analytics: Ember.inject.service('analytics'),
   menuManager: Ember.inject.service('menu'),
 
