@@ -14,7 +14,7 @@ module.exports = function(environment) {
     },
     contentSecurityPolicy: {
       'child-src': "'self'",
-      'connect-src': "http://localhost:3333 https://api.github.com http://www.google-analytics.com/",
+      'connect-src': "http://188.166.97.106:3333 https://api.github.com http://www.google-analytics.com/",
       'img-src': "'self' http://www.google-analytics.com/",
       'script-src': "'self' http://www.google-analytics.com/"
     },
