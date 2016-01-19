@@ -5,7 +5,7 @@ export default Ember.Service.extend({
   gaEnabled: false,
 
   init() {
-    Ember.$.post('http://localhost:3333/connections', {'version': 1});
+    Ember.$.post('http://188.166.97.106:3333/connections', {'version': 1});
   },
 
   enableGA() {
@@ -29,7 +29,7 @@ export default Ember.Service.extend({
   },
 
   _updateRoute(url) {
-    Ember.$.post('http://localhost:3333/routes', {url: url, version: 1});
+    Ember.$.post('http://188.166.97.106:3333/routes', {url: url, version: 1});
   }
 
 });
