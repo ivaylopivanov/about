@@ -1,23 +1,11 @@
+import routes from './namespaces/routes';
+
 export default function() {
 
   let fromRoute;
-  let routes = [
-    'about',
-    'about.index',
-    'about.education',
-    'about.languages',
-    'about.experience',
-    'about.portfolio',
-    'about.technologies',
-    'about.services',
-    'about.influencers',
-    'about.hobbies',
-    'about.contacts',
-    'about.faqs',
-    'about.lastCommit',
-  ];
+  let routesList = routes.list;
   this.transition(
-    this.toRoute(routes),
+    this.toRoute(routesList),
     this.use('fade')
   );
   this.transition(
@@ -29,8 +17,8 @@ export default function() {
       return true;
     }),
     this.toRoute((routeName) => {
-      let currentIndex = routes.indexOf(routeName);
-      return routes[currentIndex - 1] === fromRoute;
+      let currentIndex = routesList.indexOf(routeName);
+      return routesList[currentIndex - 1] === fromRoute;
     }),
     this.use('toLeft'),
     this.reverse('toRight')
