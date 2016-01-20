@@ -1,11 +1,12 @@
 import Ember from 'ember';
+import api from '../mixins/api';
 
-export default Ember.Service.extend({
+export default Ember.Service.extend(api,{
 
   gaEnabled: false,
 
   init() {
-    Ember.$.post('http://188.166.97.106:3333/connections', {'version': 2});
+    Ember.$.post(this.get('host') + '/connections', {'version': 2});
   },
 
   enableGA() {
@@ -29,7 +30,7 @@ export default Ember.Service.extend({
   },
 
   _updateRoute(url) {
-    Ember.$.post('http://188.166.97.106:3333/routes', {url: url, version: 2});
+    Ember.$.post(this.get('host') + '/routes', {url: url, version: 2});
   }
 
 });
