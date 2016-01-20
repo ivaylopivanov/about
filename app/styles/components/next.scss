@@ -3,38 +3,56 @@
 // @import '../variables/media-queries';
 // @import '../extends/absolute-top';
 // @import '../mixins/transforms';
+// @import '../mixins/transitions';
 
 .next {
+  pointer-events: none;
   margin-bottom: 70px;
   @media (max-width: $mobile) {
     margin-top: 50px;
   }
-  > p {
-    float: right;
-    margin: -30px 65px 0 0;
-    padding: 5px;
-    border-bottom: $border;
-  }
-  .cube {
-    cursor: pointer;
-    margin: 20px auto;
-    width: 100px;
-    height: 100px;
-    border: $border;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    @include rotate(45deg);
-    > div {
-      margin: 25px auto;
-      width: 50px;
-      height: 50px;
-      border-top: $border;
-      border-right: $border;
+  >  div {
+    p {
+      float: right;
+      margin: -30px 65px 0 0;
+      padding: 5px;
+      border-bottom: $border;
+      opacity: 0;
+      pointer-events: auto;
+      @include transition-property(opacity, .45s, ease-in);
+    }
+    .cube {
+      pointer-events: auto;
+      cursor: pointer;
+      margin: 20px auto;
+      width: 100px;
+      height: 100px;
+      border: $border;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      @include rotate(45deg);
+      > div {
+        margin: 25px auto;
+        width: 50px;
+        height: 50px;
+        border-top: $border;
+        border-right: $border;
+        > i {
+          @include rotate(-45deg);
+          font-size: 30px;
+          margin: 10px 0 0 -5px;
+          color: $white;
+        }
+      }
+    }
+    > a {
+      cursor: default;
     }
   }
-  > a {
-    cursor: default;
-  }
+}
+
+.next > div:hover p {
+  opacity: 1;
 }
 
 .cube:hover div {
