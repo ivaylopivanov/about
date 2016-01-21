@@ -31,3 +31,12 @@
 @import 'routes/experience';
 @import 'routes/faqs';
 
+.arrow-right:before {
+  content: " ";
+  border-style: solid;
+  margin-left: -343px;
+  margin-top: -50px;
+  border-width: 0px 0px 282px 294px;
+  border-color: transparent transparent $shark transparent;
+  position: absolute;
+}
