@@ -1,0 +1,44 @@
+.panel-info {
+  cursor: pointer;
+  border: none;
+  > .panel-heading {
+    padding: 50px;
+    background-color: $shark;
+    border-color: $shark;
+    color: $white;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    > .panel-title {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+  }
+
+}
+
+.panel-info > .panel-heading + .panel-collapse > .panel-body {
+  border: none;
+}
+
+.panel-body {
+  padding: 50px;
+  > p, > p > a {
+    font-size: 18px;
+    color: $shark;
+  }
+}
+
+.accordion-toggle:after {
+  font-family:'FontAwesome';
+  content:"\f077";
+  float: right;
+  color: inherit;
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.panel-heading.collapsed .accordion-toggle:after {
+  content:"\f078";
+}
