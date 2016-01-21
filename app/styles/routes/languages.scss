@@ -1,0 +1,30 @@
+.languages {
+  img {
+    max-width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-filter;
+    transition-property: -webkit-filter;
+  }
+  span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: $white;
+    margin-top: -60px;
+    padding: 20px;
+    text-align: right;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+  }
+}
+
+
+@media (min-width: $mobile) {
+  .languages img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
