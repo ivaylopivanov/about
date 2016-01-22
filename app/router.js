@@ -16,7 +16,11 @@ Router.reopen({
 
   updateGA: function() {
     this.get('analytics').currentRouteDidChange(this.get('url'));
-  }.on('didTransition')
+  }.on('didTransition'),
+
+  willTransition() {
+    window.scrollTo(0, 0);
+  }
 
 });
 

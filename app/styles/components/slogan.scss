@@ -3,10 +3,16 @@
 
 .slogan {
   color: $white;
-  padding: 92.5px;
   > div {
     @extend %text-center;
+    position: absolute;
+    font-weight: 600;
+    top: 60%;
+    @media (max-width: $mobile) {
+      top: 30%;
+    }
     > p {
+      letter-spacing: 1px;
       font-size: 25px;
       font-style: italic;
     }

@@ -25,8 +25,37 @@
 @import 'components/route-header';
 @import 'components/section-title';
 @import 'components/scale';
+@import 'components/navbar';
 
 @import 'routes/education';
 @import 'routes/languages';
 @import 'routes/experience';
 @import 'routes/faqs';
+
+.thanks {
+  > :first-child {
+    padding: 100px 200px;
+  }
+  > :last-child {
+    padding: 50px;
+  }
+  @media (max-width: $mobile) {
+    padding: 50px;
+  }
+  small {
+    color: $dark-blue;
+    font-size: 18px;
+    margin-top: 50px;
+    display: block;
+  }
+  p {
+    color: $dark-blue;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 3px 3px;
+  }
+  i {
+    font-weight: normal;
+  }
+}
