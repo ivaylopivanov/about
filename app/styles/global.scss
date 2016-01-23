@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   background: url('../images/bg.jpg') repeat;
 }
 
@@ -17,6 +19,13 @@ a:hover {
   border-bottom: $border;
 }
 
+.liquid-container {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+}
 
 .fa {
   color: $gold;

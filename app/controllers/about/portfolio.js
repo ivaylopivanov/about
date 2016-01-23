@@ -311,6 +311,32 @@ export default Ember.Controller.extend({
       title: 'Stock level'
     },
   ],
+  aboutItems: [
+    {
+      src: 'images/about/home-page.png',
+      w: 1200,
+      h: 600,
+      title: 'Home page'
+    },
+      {
+      src: 'images/about/experience.png',
+      w: 1200,
+      h: 600,
+      title: 'Experience'
+    },
+      {
+      src: 'images/about/hobbies.png',
+      w: 1200,
+      h: 600,
+      title: 'Hobbies'
+    },
+      {
+      src: 'images/about/influencers.png',
+      w: 1200,
+      h: 600,
+      title: 'Influencers'
+    },
+  ],
   items: [],
   actions: {
     show(project) {

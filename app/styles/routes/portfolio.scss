@@ -1,0 +1,56 @@
+.portfolio {
+  background: $shark;
+  > div {
+    perspective: 2000px;
+    img {
+      @media (max-width: $mobile) {
+        display: none;
+      }
+      // float: right;
+      width:40%;
+      box-shadow: 1px 0px 0 $black,0 0 30px rgba(0,95,99,0.2);
+      -moz-transform-origin: left bottom;
+      -o-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+      -webkit-transform-origin: left bottom;
+      transform-origin: left bottom;
+      @include rotateYX(-40deg, 15deg);
+    }
+    img:nth-of-type(2) {
+      margin-top: -60px;
+      margin-left: 20%;
+    }
+    img:nth-of-type(3) {
+      margin-top: -60px;
+      margin-left: 40%;
+    }
+    > p {
+      color: $white;
+      font-size: 18px;
+      > i {
+        color: red;
+      }
+    }
+    > h4 {
+      color: rgba(170, 202, 202, 0.8);
+      font-weight: bold;
+    }
+    a:hover {
+      border: none;
+    }
+    button {
+      border: none;
+      background: #96c93d;
+      color: $white;
+      font-size: 20px;
+      padding: 10px 30px;
+      border-radius: 5px;
+      @include skewX(-27deg);
+      outline: none;
+      > span {
+        display: block;
+        @include skewX(27deg);
+      }
+    }
+  }
+}

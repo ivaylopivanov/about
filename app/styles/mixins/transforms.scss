@@ -1,13 +1,33 @@
 // .cs-text > span span
 
 @mixin rotate-skewY($rD, $sD) {
+  -o-transform: rotate($rD) skewY($sD);
+  -moz-transform: rotate($rD) skewY($sD);
   -ms-transform: rotate($rD) skewY($sD);
   -webkit-transform: rotate($rD) skewY($sD);
   transform: rotate($rD) skewY($sD);
 }
 
+@mixin skewX($sD) {
+  -o-transform: skewX($sD);
+  -moz-transform: skewX($sD);
+  -ms-transform: skewX($sD);
+  -webkit-transform: skewX($sD);
+  transform: skewX($sD);
+}
+
 @mixin rotate($rD) {
+  -o-transform: rotate($rD);
+  -moz-transform: rotate($rD);
   -ms-transform: rotate($rD);
   -webkit-transform: rotate($rD);
   transform: rotate($rD);
+}
+
+@mixin rotateYX($rY, $rX) {
+  -o-transform: rotateY($rY) rotateX($rX);
+  -moz-transform: rotateY($rY) rotateX($rX);
+  -ms-transform: rotateY($rY) rotateX($rX);
+  -webkit-transform: rotateY($rY) rotateX($rX);
+  transform: rotateY($rY) rotateX($rX);
 }

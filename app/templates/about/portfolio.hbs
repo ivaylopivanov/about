@@ -1,9 +1,113 @@
 {{route-header title="PORTFOLIO" icon="archive" imgName="portfolio"}}
-<div class="row bg-shark p50">
+{{section-title title="Esrol" icon="fa fa-server"}}
+<div class="row p50 portfolio">
   <div class="col-md-8">
+    <p>Esrol is an open source project, developed by me for creating cross-platform back-end applications. I'm using it in both work and personal projects.</p>
+    <a href="https://github.com/esrol/esrol-server-app/wiki" target="_blank"><button><span>Read More</span></button></a>
   </div>
 </div>
-<div class="row">
+{{section-title title="Travel" icon="fa fa-plane"}}
+<div class="row p50 portfolio">
+  <div class="col-md-6">
+    <p>Travel is an enterprise project for 7 different services: Flights, Hotels, Cars, Tours, Restaurants, and Clubs.</p>
+    <p>I developed a working prototype (beta version), so the owner of the project can search for investors.</p>
+    <p>The prototype has a huge admin panel(CMS model). You can control everything from there. For example: flight destinations, campaigns for special offers, user access level, bookings, locations, cities, maintenance, emails, entity features, stats, languages, and currencies.</p>
+    <p>Although it's not appropriate to be written in Javascript(but after all it's a prototype), I've implemented algorithms for creating a customer flight route based on flight destinations and customer input. For example, If you want to reach point D from point A and there is no such flight, the system will try to search for available flights from A to B, B to C, C to D, so You can reach point D.</p>
+    <h4>Used technologies:</h4>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Bootstrap</li>
+      <li>Ember.js</li>
+      <li>Express.js</li>
+      <li>Redis</li>
+      <li>Apache Solr</li>
+      <li>MySQL</li>
+      <li>NGINX on Digital Ocean</li>
+    </ul>
+    <p><i>Public access is restricted.</i></p>
+    <button {{action "show" "travel"}}><span>View Images</span></button>
+  </div>
+  <div class="col-md-6">
+    <img src="images/travel/restaurant-view.png">
+    <img src="images/travel/results-flights.png">
+    <img src="images/travel/booking-flight.png">
+  </div>
+</div>
+{{section-title title="About" icon="fa fa-user"}}
+<div class="row p50 portfolio">
+  <div class="col-md-6">
+    <p>The previous version of this site</p>
+    <h4>Used technologies:</h4>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Bootstrap</li>
+      <li>Ember.js</li>
+      <li>GSAP</li>
+      <li>NGINX on Digital Ocean</li>
+    </ul>
+    <button {{action "show" "about"}}><span>View Images</span></button>
+  </div>
+  <div class="col-md-6">
+    <img src="images/about/home-page.png">
+    <img src="images/about/experience.png">
+    <img src="images/about/hobbies.png">
+  </div>
+</div>
+{{section-title title="E-Console" icon="fa fa-dashboard"}}
+<div class="row p50 portfolio">
+  <div class="col-md-6">
+    <p>E-Console is a project, developed in microservice environment for creating orders and supervising stock levels distributed in multiple warehouses.</p>
+    <p>A public API exists and it's integrated with E-Commerce platforms.</p>
+    <p>It is used by the warehouse, inventory team, customers, and suppliers.</p>
+    <h4>Used technologies:</h4>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Bootstrap</li>
+      <li>Ember.js</li>
+      <li>Esrol.js</li>
+      <li>Redis</li>
+      <li>MySQL</li>
+      <li>NGINX on Digital Ocean</li>
+    </ul>
+    <p><i>Public access is restricted.</i></p>
+    <button {{action "show" "eConsole"}}><span>View Images</span></button>
+  </div>
+  <div class="col-md-6">
+    <img src="images/e-console/stock.png">
+    <img src="images/e-console/orders-grid.png">
+    <img src="images/e-console/order-create.png">
+  </div>
+</div>
+{{section-title title="E-Ship" icon="fa fa-dashboard"}}
+<div class="row bg-shark p50 portfolio">
+  <div class="col-md-6">
+    <p>E-Ship is a platform for accessing orders from multi-channel listings, shipping(DROPSHIP or JIT), and manifesting operations.</p>
+    <p>A public API exists and it's integrated with E-Commerce platforms and couriers.</p>
+    <p>It is used by the warehouse, inventory team, customers, customer support, and suppliers.</p>
+    <h4>Used technologies:</h4>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Bootstrap</li>
+      <li>Ember.js</li>
+      <li>Esrol.js</li>
+      <li>Redis</li>
+      <li>MySQL</li>
+      <li>NGINX on Digital Ocean</li>
+    </ul>
+    <p><i>Public access is restricted.</i></p>
+    <button {{action "show" "eShip"}}><span>View Images</span></button>
+  </div>
+  <div class="col-md-6">
+    <img src="images/e-ship/orders-grid.png">
+    <img src="images/e-ship/processed-orders.png">
+    <img src="images/e-ship/manifest.png">
+  </div>
+</div>
+<div class="row mt150">
   <div class="col-md-12 p50 bg-shark text-center">
     <div class="row">
       <div class="col-md-8">
@@ -16,3 +120,4 @@
     </div>
   </div>
 </div>
+{{photo-swipe gallery=myGallery options=psOpts items=items}}
