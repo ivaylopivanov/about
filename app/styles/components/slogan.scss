@@ -7,14 +7,17 @@
     @extend %text-center;
     position: absolute;
     font-weight: 600;
-    top: 60%;
+    top: 90%;
     @media (max-width: $mobile) {
-      top: 30%;
+      top: 55%;
     }
     > p {
       letter-spacing: 1px;
       font-size: 25px;
       font-style: italic;
+      @media (max-width: $mobile) {
+        font-size: 16px;
+      }
     }
   }
 }
