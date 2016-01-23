@@ -18,10 +18,6 @@ Router.reopen({
     this.get('analytics').currentRouteDidChange(this.get('url'));
   }.on('didTransition'),
 
-  willTransition() {
-    window.scrollTo(0, 0);
-  }
-
 });
 
 Router.map(function() {

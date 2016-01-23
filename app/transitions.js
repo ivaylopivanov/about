@@ -20,8 +20,8 @@ export default function() {
       let currentIndex = routesList.indexOf(routeName);
       return routesList[currentIndex - 1] === fromRoute;
     }),
-    this.use('toLeft'),
-    this.reverse('toRight')
+    this.use('fade-custom'),
+    this.reverse('fade-custom')
   );
 
 }
