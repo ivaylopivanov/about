@@ -1,6 +1,7 @@
 // BEGIN-SNIPPET fade-definition
 // https://github.com/ember-animation/liquid-fire/blob/master/app/transitions/fade.js
 import { isAnimating, finish, timeSpent, animate, stop } from "liquid-fire";
+import Ember from 'ember';
 
 export default function fade(opts={}) {
   var firstStep;
@@ -22,10 +23,10 @@ export default function fade(opts={}) {
   }
   return firstStep.then(() => {
     window.scrollTo(0,0);
-      Ember.run.later(() => {
-        return animate(this.newElement, {opacity: [(opts.maxOpacity || 1), 0]}, opts, 'fade-in');
+    Ember.run.later(() => {
+      return animate(this.newElement, {opacity: [(opts.maxOpacity || 1), 0]}, opts, 'fade-in');
 
-      }, 200)
+    }, 300);
   });
 }
 

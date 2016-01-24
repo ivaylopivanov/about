@@ -9,11 +9,18 @@
   @media (max-width: $mobile) {
     height: 100%;
   }
-  > .col-md-4 {
+  > .col-md-5 {
     padding: 80px 70px 70px 70px;
+    @media (max-width: $mobile) {
+      padding: 40px 30px 30px 30px;
+    }
     > h1 {
       font-weight: 600;
       letter-spacing: 5px;
+      @media (max-width: $mobile) {
+        font-weight: 300;
+        letter-spacing: 1px;
+      }
     }
     > h1:after {
       position: relative;
@@ -28,7 +35,7 @@
       font-size: 78px;
     }
   }
-  > .col-md-8 > img {
+  > .col-md-7 > img {
     width: 100%;
     height: 100%;
   }
@@ -37,7 +44,7 @@
     border-bottom: 10px solid $dark-blue;
     transition: border 0.15s ease-in;
   }
-  &:hover .col-md-4 > h1:after {
+  &:hover .col-md-5 > h1:after {
     width: 100%;
     transition: width 0.15s ease-in;
   }

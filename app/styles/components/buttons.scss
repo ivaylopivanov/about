@@ -1,0 +1,15 @@
+// @import '../variables/colors.scss'
+
+.btn-rounded {
+  a {
+    padding: 9px 23px;
+    border-radius: 999em;
+    border: 1px solid #869096;
+    color: #a9b0b4;
+    letter-spacing: .5px;
+    display: block;
+  }
+  a:hover {
+    border: 1px solid #a9b0b4;
+  }
+}

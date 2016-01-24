@@ -1,0 +1,13 @@
+.apis {
+  hr {
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+  a {
+    border: none;
+    .fa {
+      color: $white;
+    }
+  }
+}
