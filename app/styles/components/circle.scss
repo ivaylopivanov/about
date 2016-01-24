@@ -1,0 +1,38 @@
+.circle {
+  text-align: center;
+  cursor: pointer;
+  > .circle-icon {
+    background-color: $custom-grey;
+    border-radius: 50%;
+    display: table;
+    height: 120px;
+    margin: 0 auto;
+    width: 120px;
+    border: 2px solid $custom-grey;
+    > i {
+      color: $white;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  > h3 {
+    color: $black-70;
+    padding: 30px 0px;
+  }
+}
+
+.circle.scale {
+  box-shadow: none;
+}
+
+.circle:hover {
+  > .circle-icon {
+    border: 2px solid $custom-grey;
+    background-color: $white;
+    color: $custom-grey;
+    @include transition-property(All, 0.5s, ease);
+    > i {
+      color: $custom-grey;
+    }
+  }
+}
