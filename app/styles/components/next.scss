@@ -52,24 +52,55 @@
   }
 }
 
-.arrow-right {
+.arrow-left {
   > div >.next > div > p {
     bottom: 85px;
   }
 }
 
-.arrow-right:before {
+.arrow-left:before {
   content: " ";
   border-style: solid;
   margin-left: -343px;
   margin-top: -50px;
-  border-width: 0px 0px 350px 294px;
+  border-width: 0px 0px 291px 294px;
   border-color: transparent transparent $shark transparent;
+  position: absolute;
+}
+
+.arrow-right:after {
+  content: " ";
+  border-style: solid;
+  border-width: 291px 0 0 311px;
+  border-color: transparent transparent transparent #252b2f;
+  margin-left: 515px;
+  margin-top: -240px;
   position: absolute;
 }
 
 .next > div:hover p {
   opacity: 1;
+}
+
+.bottom-contact {
+  font-size: 20px;
+  color: $shark;
+  a {
+    color: $shark;
+  }
+}
+
+.next-half-filled {
+  > .text-right {
+    @media (max-width: $mobile) {
+      text-align: center;
+    }
+  }
+  > .pull-right {
+    @media (max-width: $mobile) {
+      float: none !important;
+    }
+  }
 }
 
 .cube:hover div {
