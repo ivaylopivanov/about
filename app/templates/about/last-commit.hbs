@@ -1,6 +1,27 @@
 {{route-header title="LAST COMMIT" icon="code" imgName="last-commit"}}
 <div class="row bg-shark p50">
   <div class="col-md-8">
+    <table class="table last-commit">
+      <tbody>
+        <tr>
+          <td>Repo</td><td>{{repoName}}</td>
+        </tr>
+        <tr>
+          <td>Repo URL</td><td><a href="{{repoURL}}" target="_blank">{{repoURL}}</a></td>
+        </tr>
+        <tr>
+          <td>Time</td><td>{{time}}</td>
+        </tr>
+        <tr>
+          <td>Message</td><td>{{commitMessage}}</td>
+        </tr>
+        <tr>
+          <td>Commit URL</td><td><a href="{{commitURL}}" target="_blank">{{commitURL}}</a></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  {{next-route route="about.index" icon="home" title="Home Page"}}
+  <div class="col-md-4">
+    {{next-route route="about.index" icon="home" title="Home Page"}}
+  </div>
 </div>

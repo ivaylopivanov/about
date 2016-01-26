@@ -6,7 +6,6 @@
       @media (max-width: $mobile) {
         display: none;
       }
-      // float: right;
       width:40%;
       box-shadow: 1px 0px 0 $black,0 0 30px rgba(0,95,99,0.2);
       -moz-transform-origin: left bottom;
@@ -35,7 +34,7 @@
       color: rgba(170, 202, 202, 0.8);
       font-weight: bold;
     }
-    a:hover {
+    a, a:hover {
       border: none;
     }
     button {
@@ -51,6 +50,9 @@
         display: block;
         @include skewX(27deg);
       }
+    }
+    button:hover {
+      background: #ACE051;
     }
   }
 }
