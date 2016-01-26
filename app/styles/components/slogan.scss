@@ -4,8 +4,10 @@
 .slogan {
   color: $white;
   > div {
+    width: 100%;
     @extend %text-center;
     position: absolute;
+    display: block;
     font-weight: 600;
     top: 90%;
     @media (max-width: $mobile) {
