@@ -2,6 +2,7 @@
 // @import '../extends/text-center';
 
 #cookie-bar {
+  opacity: 0;
   @extend %text-center;
   z-index: 101;
   background: $light-dark-grey;
