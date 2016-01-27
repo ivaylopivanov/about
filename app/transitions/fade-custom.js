@@ -23,8 +23,11 @@ export default function fade(opts={}) {
   }
   return firstStep.then(() => {
     window.scrollTo(0,0);
+    Ember.$('.fade-in').css('visibility', 'hidden');
     Ember.run.later(() => {
-      return animate(this.newElement, {opacity: [(opts.maxOpacity || 1), 0]}, opts, 'fade-in');
+      return animate(this.newElement, {opacity: [(opts.maxOpacity || 1), 0]}, opts, 'fade-in').then(function() {
+        Ember.$('.fade-in').css({'opacity': 0, visibility: 'visible'});
+      });
 
     }, 300);
   });

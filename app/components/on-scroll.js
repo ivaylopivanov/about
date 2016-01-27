@@ -4,7 +4,19 @@ export default Ember.Component.extend({
 
   onScroll() {
     let top = Ember.$(window).scrollTop();
+    this.fadeContent();
     this.toTop(top);
+  },
+
+  fadeContent() {
+    $('.fade-in').each(function() {
+      let objectBottom = $(this).offset().top + 100;
+      let windowBottom = $(window).scrollTop() + $(window).height();
+      console.log(windowBottom, objectBottom);
+      if( windowBottom >= objectBottom) {
+        $(this).animate({'opacity':'1'}, 500);
+      }
+    });
   },
 
   toTop(top) {
