@@ -5,6 +5,7 @@
 // @import '../extends/menu-arrows';
 
 .navigation {
+  opacity: 0;
   > li {
     @extend %no-bullets;
     margin: 3px;
