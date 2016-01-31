@@ -22,11 +22,16 @@ export default function fade(opts={}) {
     firstStep = animate(this.oldElement, {opacity: 0}, outOpts, 'fade-out');
   }
   return firstStep.then(() => {
+    let isMobile = $(window).width() < 1000;
     window.scrollTo(0,0);
-    Ember.$('.fade-in').css('visibility', 'hidden');
+    if (!isMobile) {
+      Ember.$('.fade-in').css('visibility', 'hidden');
+    }
     Ember.run.later(() => {
       return animate(this.newElement, {opacity: [(opts.maxOpacity || 1), 0]}, opts, 'fade-in').then(function() {
-        Ember.$('.fade-in').css({'opacity': 0, visibility: 'visible'});
+        if (!isMobile) {
+          Ember.$('.fade-in').css({'opacity': 0, visibility: 'visible'});
+        }
       });
 
     }, 300);

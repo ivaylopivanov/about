@@ -1,4 +1,6 @@
-.fade-in {
-  opacity: 0;
-  visibility: visible;
+@media (min-width: $mobile) {
+  .fade-in {
+    opacity: 0;
+    visibility: visible;
+  }
 }

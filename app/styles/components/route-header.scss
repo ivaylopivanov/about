@@ -41,13 +41,15 @@
       height: 310px;
     }
   }
-  &:hover {
-    color: $dark-blue;
-    border-bottom: 10px solid $dark-blue;
-    transition: border 0.15s ease-in;
-  }
-  &:hover .col-md-5 > h1:after {
-    width: 100%;
-    transition: width 0.15s ease-in;
+  @media (min-width: $mobile) {
+    &:hover {
+      color: $dark-blue;
+      border-bottom: 10px solid $dark-blue;
+      transition: border 0.15s ease-in;
+    }
+    &:hover .col-md-5 > h1:after {
+      width: 100%;
+      transition: width 0.15s ease-in;
+    }
   }
 }

@@ -9,10 +9,12 @@ export default Ember.Component.extend({
   },
 
   fadeContent() {
+    if ($(window).width() < 1000) {
+      return false;
+    }
     $('.fade-in').each(function() {
       let objectBottom = $(this).offset().top + 100;
       let windowBottom = $(window).scrollTop() + $(window).height();
-      console.log(windowBottom, objectBottom);
       if( windowBottom >= objectBottom) {
         $(this).animate({'opacity':'1'}, 500);
       }
